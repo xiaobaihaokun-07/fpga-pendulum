@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090e17"><title>倒立摆 · 完整波形监测</title>
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><div class="brand-mark">∿</div><div><strong>PENDULUM<span>LAB</span></strong><small>CONTROL OBSERVATORY</small></div></div>
+    <div class="side-section">实时实验</div><a class="side-link active" href="#waveforms">◫　完整波形<span class="active-dot"></span></a>
+    <a class="side-link" href="#eventsPanel">◷　按键与状态事件</a>
+    <div class="side-section lower">数据源</div><div class="source-box"><span class="source-orb"></span><div><b>Tang Nano 20K</b><span id="sideProtocol">等待遥测</span></div></div>
+    <div class="side-foot">自动保存 CSV + 原始串口<br>只读监测，不向电机发指令</div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div class="crumb">倒立摆实验 <span>/</span><b>完整波形</b></div><div class="top-actions"><span id="clock" class="clock">--:--:--</span><span id="connectionPill" class="connection-pill off"><i></i>等待数据</span></div></header>
+    <div class="content">
+      <section class="intro"><div><div class="eyebrow"><span></span> 当前状态模式</div><h1 id="modeValue" aria-live="polite">等待串口数据</h1></div></section>
+      <div id="notice" class="notice live-notice" role="status"></div>
+      <section class="metrics live-metrics" aria-label="实时读数">
+        <article class="metric"><div class="metric-top"><span>摆杆角度</span><span class="metric-symbol teal">∠</span></div><div class="metric-value"><b id="angleValue">--</b><small>ADC</small></div><div id="angleSub" class="metric-sub">目标 -- · 控制滤波 --</div><div class="metric-accent teal-bg"></div></article>
+        <article class="metric"><div class="metric-top"><span>编码器位置</span><span class="metric-symbol blue">⌖</span></div><div class="metric-value"><b id="positionValue">--</b><small>计数</small></div><div id="positionSub" class="metric-sub">执行目标 -- · 最终目的地 --</div><div class="metric-accent blue-bg"></div></article>
+        <article class="metric"><div class="metric-top"><span>水平臂速度</span><span class="metric-symbol amber">↗</span></div><div class="metric-value"><b id="speedValue">--</b><small>计数/s</small></div><div id="speedSub" class="metric-sub">最近 50 ms 位移估计</div><div class="metric-accent amber-bg"></div></article>
+        <article class="metric"><div class="metric-top"><span>PWM 输出</span><span class="metric-symbol purple">⌁</span></div><div class="metric-value"><b id="pwmValue">--</b><small>PWM</small></div><div id="pwmSub" class="metric-sub">实际应用 -- · 周期 3600</div><div class="metric-accent purple-bg"></div></article>
+        <article class="metric"><div class="metric-top"><span>物体 X 坐标</span><span class="metric-symbol teal">⊕</span></div><div class="metric-value coordinate"><b id="xyValue">--</b><small>px</small></div><div id="xySub" class="metric-sub">采用 X -- · 红色像素 --</div><div class="metric-accent teal-bg"></div></article>
+        <article class="metric setting-metric"><div class="metric-top"><span>目标角度设置</span><span class="metric-symbol blue">⌘</span></div><div id="settingStatus" class="setting-status" role="status">等待串口数据</div><div class="setting-keys" aria-label="实体按键设置角度"><div><b>K1</b><span><span id="settingK1">/</span><span class="key-unit"> 次 × 100°</span></span></div><div><b>K2</b><span><span id="settingK2">/</span><span class="key-unit"> 次 × 10°</span></span></div><div><b>K3</b><span><span id="settingK3">/</span><span class="key-unit"> 次 × 1°</span></span></div></div><div class="setting-total">合计 <strong id="settingDegrees">/</strong><span>°</span></div><div id="keySub" class="metric-sub">实体 K4 进入设置 · 等待设置遥测</div><div class="metric-accent blue-bg"></div></article>
+      </section>
+      <div id="waveforms" class="board-header"><div><h2>实时波形</h2><p>位置使用连续累计编码器计数；编码器波形仅显示实际位置。</p></div><div class="live-controls"><div class="chart-controls"><button class="range active" data-seconds="10">10 秒</button><button class="range" data-seconds="30">30 秒</button><button class="range" data-seconds="60">60 秒</button><button class="range" data-seconds="120">120 秒</button><button class="range" data-seconds="300">300 秒</button></div><div class="control-line"><label>位置/速度单位 <select id="units"><option value="counts">编码器计数</option><option value="degrees">角度</option></select></label><button id="pause" class="quiet-button">冻结波形</button><button id="clearWaveforms" class="quiet-button" title="清空网页波形和事件并从零计时，保留已保存文件">清空波形并重新计时</button><button id="mark" class="quiet-button emphasis">标记一次扰动</button></div></div></div>
+      <section class="chart-grid waveform-grid">
+        <article class="panel"><div class="panel-head"><div><h3>角度传感器与控制目标</h3></div><div class="legend"><span><i class="blue-dot"></i>滤波</span><span><i class="purple-dot"></i>目标</span></div></div><div class="plot"><canvas id="angleChart" aria-label="滤波角度与目标波形"></canvas></div></article>
+        <article class="panel"><div class="panel-head"><div><h3>编码器位置</h3></div><div class="legend"><span><i class="blue-dot"></i>编码器位置</span></div></div><div class="plot"><canvas id="positionChart" aria-label="编码器实际位置波形"></canvas></div></article>
+        <article class="panel"><div class="panel-head"><div><h3>水平臂速度</h3></div><div class="legend"><span><i class="amber-dot"></i>实测估计</span><span><i class="purple-dot"></i>规划目标</span></div></div><div class="plot"><canvas id="speedChart" aria-label="实测与目标速度波形"></canvas></div></article>
+        <article class="panel"><div class="panel-head"><div><h3>PWM 输出</h3><p>原始请求与硬件锁存的限幅后应用值</p></div><div class="legend"><span><i class="purple-dot"></i>原始请求</span><span><i class="amber-dot"></i>应用档值</span></div></div><div class="plot"><canvas id="pwmChart" aria-label="PWM 请求与应用值波形"></canvas></div></article>
+        <article class="panel"><div class="panel-head"><div><h3>物体坐标X</h3><p>画面宽 208 像素；中值滤波后经 5 像素死区</p></div><div class="legend"><span><i class="teal-dot"></i>原始 X</span><span><i class="purple-dot"></i>控制采用 X</span></div></div><div class="plot"><canvas id="xChart" aria-label="物体坐标X原始与采用值波形"></canvas></div></article>
+        <article class="panel"><div class="panel-head"><div><h3>物体坐标Y</h3><p>画面高 156 像素；Y 仅显示与记录，不参与运动控制</p></div><div class="legend"><span><i class="blue-dot"></i>原始 Y</span></div></div><div class="plot"><canvas id="yChart" aria-label="物体坐标Y波形"></canvas></div></article>
+      </section>
+      <section class="chart-grid details-grid">
+        <article id="eventsPanel" class="panel"><div class="panel-head"><div><div class="panel-kicker">EVENT TIMELINE</div><h3>按键、扰动与运行状态</h3><p>实线标记手动扰动，虚线标记按键/复位事件</p></div></div><ol id="events" class="event-list"><li>等待事件</li></ol></article>
+        <article class="panel"><div class="panel-head"><div><div class="panel-kicker">RECORDING</div><h3>采集与自动保存</h3><p>网页冻结或关闭后，后台仍继续记录</p></div></div><div class="info-grid"><div><span>串口 / 波特率</span><strong id="portValue">--</strong></div><div><span>遥测版本 / 配对</span><strong id="protocolValue">--</strong></div><div><span>采集样本 / CRC 异常</span><strong id="framesValue">0 / 0</strong></div><div><span>串口数据龄 / 相机帧龄</span><strong id="ageValue">--</strong></div><div><span>位置误差</span><strong id="positionError">--</strong></div><div><span>摄像头初始化</span><strong id="cameraStatus">--</strong></div></div><a class="download" href="/api/export.csv" download="pendulum_waveforms.csv">↓ 下载当前波形缓存 CSV</a><p class="log-title">完整采集文件（持续自动写入）</p><div id="logPath" class="log-path">等待记录文件</div></article>
+      </section>
+      <footer>速度由 50 ms 编码器位移估计。PWM 应用档值范围 ±3600，表示锁存占空比与方向，不代表测得力矩。起摆/补摆期间没有固定的位置环目标，相关目标曲线留空。网页仅监测。</footer>
+    </div>
+  </main>
+</div>
+</body></html>
