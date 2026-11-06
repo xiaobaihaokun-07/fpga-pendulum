@@ -1,0 +1,164 @@
+[
+ {
+  "InstFile" : "E:/codex_fpga_pid/best-end/src/camera_uart.v",
+  "InstLine" : 1,
+  "InstName" : "camera_uart",
+  "ModuleFile" : "E:/codex_fpga_pid/best-end/src/camera_uart.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "camera_uart"
+ },
+ {
+  "InstFile" : "E:/codex_fpga_pid/best-end/src/pendulum_vision_top.v",
+  "InstLine" : 3,
+  "InstName" : "pendulum_vision_top",
+  "ModuleFile" : "E:/codex_fpga_pid/best-end/src/pendulum_vision_top.v",
+  "ModuleLine" : 3,
+  "ModuleName" : "pendulum_vision_top",
+  "SubInsts" : [
+   {
+    "InstFile" : "E:/codex_fpga_pid/best-end/src/pendulum_vision_top.v",
+    "InstLine" : 23,
+    "InstName" : "camera",
+    "ModuleFile" : "E:/codex_fpga_pid/best-end/src/camera_x_frontend.v",
+    "ModuleLine" : 3,
+    "ModuleName" : "camera_x_frontend",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/camera_x_frontend.v",
+      "InstLine" : 20,
+      "InstName" : "init",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/preview_init.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "preview_init",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/codex_fpga_pid/best-end/src/preview_init.v",
+        "InstLine" : 29,
+        "InstName" : "bus",
+        "ModuleFile" : "E:/codex_fpga_pid/best-end/src/camera_sccb.v",
+        "ModuleLine" : 8,
+        "ModuleName" : "camera_sccb"
+       },
+       {
+        "InstFile" : "E:/codex_fpga_pid/best-end/src/preview_init.v",
+        "InstLine" : 36,
+        "InstName" : "rom",
+        "ModuleFile" : "E:/codex_fpga_pid/best-end/src/ov5640_reference_rom.v",
+        "ModuleLine" : 7,
+        "ModuleName" : "ov5640_reference_rom"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/camera_x_frontend.v",
+      "InstLine" : 25,
+      "InstName" : "sampler",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/camera_dvp_sampler.v",
+      "ModuleLine" : 6,
+      "ModuleName" : "camera_dvp_sampler"
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/camera_x_frontend.v",
+      "InstLine" : 34,
+      "InstName" : "sync_detect",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/camera_sync_detect.v",
+      "ModuleLine" : 6,
+      "ModuleName" : "camera_sync_detect"
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/camera_x_frontend.v",
+      "InstLine" : 42,
+      "InstName" : "tracker",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/red_tracker.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "red_tracker"
+     }
+    ]
+   },
+   {
+    "InstFile" : "E:/codex_fpga_pid/best-end/src/pendulum_vision_top.v",
+    "InstLine" : 33,
+    "InstName" : "control",
+    "ModuleFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+    "ModuleLine" : 5,
+    "ModuleName" : "balance_top",
+    "SubInsts" : [
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+      "InstLine" : 446,
+      "InstName" : "my_adc",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/ads1115.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "ads1115"
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+      "InstLine" : 450,
+      "InstName" : "my_encoder",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/encoder.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "encoder"
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+      "InstLine" : 682,
+      "InstName" : "meteor_release",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+      "ModuleLine" : 1552,
+      "ModuleName" : "meteor_upright_release"
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+      "InstLine" : 801,
+      "InstName" : "vision_enabled.follow",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/vision_follow.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "vision_follow"
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+      "InstLine" : 894,
+      "InstName" : "status_led",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/ws2812_status.v",
+      "ModuleLine" : 5,
+      "ModuleName" : "ws2812_status"
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+      "InstLine" : 1032,
+      "InstName" : "my_balance_pid",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/balance_pid_core.v",
+      "ModuleLine" : 3,
+      "ModuleName" : "balance_pid_core"
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+      "InstLine" : 1345,
+      "InstName" : "windmill",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/windmill_control.v",
+      "ModuleLine" : 14,
+      "ModuleName" : "windmill_control",
+      "SubInsts" : [
+       {
+        "InstFile" : "E:/codex_fpga_pid/best-end/src/windmill_control.v",
+        "InstLine" : 67,
+        "InstName" : "rotation_guard",
+        "ModuleFile" : "E:/codex_fpga_pid/best-end/src/windmill_control.v",
+        "ModuleLine" : 211,
+        "ModuleName" : "windmill_rotation_guard"
+       }
+      ]
+     },
+     {
+      "InstFile" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+      "InstLine" : 1403,
+      "InstName" : "my_uart",
+      "ModuleFile" : "E:/codex_fpga_pid/best-end/src/uart.v",
+      "ModuleLine" : 1,
+      "ModuleName" : "uart_tx"
+     }
+    ]
+   }
+  ]
+ }
+]

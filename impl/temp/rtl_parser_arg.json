@@ -1,0 +1,81 @@
+{
+ "Device" : "GW2AR-18C",
+ "Files" : [
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/ads1115.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/auto_pid.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/balance_pid_core.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/camera_dvp_sampler.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/camera_sccb.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/camera_sync_detect.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/camera_uart.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/camera_x_frontend.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/encoder.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/ov5640_reference_rom.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/pendulum_vision_top.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/preview_init.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/red_tracker.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/uart.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/vision_follow.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/windmill_control.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "E:/codex_fpga_pid/best-end/src/ws2812_status.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "E:/codex_fpga_pid/best-end/impl/temp/rtl_parser.result",
+ "Top" : "pendulum_vision_top",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

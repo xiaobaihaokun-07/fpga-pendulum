@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2AR-18C" package="QFN88" speed="8" partNumber="GW2AR-LV18QN88C8/I7"/>
+    <FileList>
+        <File path="E:\codex_fpga_pid\best-end\src\ads1115.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\auto_pid.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\balance_pid_core.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\camera_dvp_sampler.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\camera_sccb.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\camera_sync_detect.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\camera_uart.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\camera_x_frontend.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\encoder.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\ov5640_reference_rom.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\pendulum_vision_top.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\preview_init.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\red_tracker.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\uart.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\vision_follow.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\windmill_control.v" type="verilog"/>
+        <File path="E:\codex_fpga_pid\best-end\src\ws2812_status.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="E:\codex_fpga_pid\best-end\impl\gwsynthesis\pendulum_vision.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="pendulum_vision_top"/>
+        <Option type="vcc" value="1.0"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

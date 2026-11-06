@@ -1,0 +1,71 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\ads1115.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\auto_pid.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\balance_pid_core.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\camera_dvp_sampler.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\camera_sccb.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\camera_sync_detect.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\camera_uart.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\camera_x_frontend.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\encoder.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\ov5640_reference_rom.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\pendulum_vision_top.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\preview_init.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\red_tracker.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\uart.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\vision_follow.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\windmill_control.v'
+Analyzing Verilog file 'E:\codex_fpga_pid\best-end\src\ws2812_status.v'
+Compiling module 'pendulum_vision_top'("E:\codex_fpga_pid\best-end\src\pendulum_vision_top.v":3)
+Compiling module 'camera_x_frontend'("E:\codex_fpga_pid\best-end\src\camera_x_frontend.v":3)
+Compiling module 'preview_init'("E:\codex_fpga_pid\best-end\src\preview_init.v":3)
+Compiling module 'camera_sccb'("E:\codex_fpga_pid\best-end\src\camera_sccb.v":8)
+Compiling module 'ov5640_reference_rom'("E:\codex_fpga_pid\best-end\src\ov5640_reference_rom.v":7)
+Compiling module 'camera_dvp_sampler'("E:\codex_fpga_pid\best-end\src\camera_dvp_sampler.v":6)
+Compiling module 'camera_sync_detect(WIDTH=208,HEIGHT=156)'("E:\codex_fpga_pid\best-end\src\camera_sync_detect.v":6)
+Compiling module 'red_tracker'("E:\codex_fpga_pid\best-end\src\red_tracker.v":3)
+Compiling module 'balance_top(METEOR_ENABLE=1,VISION_ENABLE=1,ANGLE_SET_ENABLE=1,TRACK_MAX_SPEED_Q16=16'b0010111011100000,TRACK_ACCEL_Q16=16'b0000000000010000)'("E:\codex_fpga_pid\best-end\src\auto_pid.v":5)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("E:\codex_fpga_pid\best-end\src\auto_pid.v":432)
+Compiling module 'ads1115'("E:\codex_fpga_pid\best-end\src\ads1115.v":3)
+Compiling module 'encoder'("E:\codex_fpga_pid\best-end\src\encoder.v":1)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("E:\codex_fpga_pid\best-end\src\encoder.v":69)
+WARN  (EX3791) : Expression size 23 truncated to fit in target size 22("E:\codex_fpga_pid\best-end\src\encoder.v":72)
+Compiling module 'meteor_upright_release'("E:\codex_fpga_pid\best-end\src\auto_pid.v":1552)
+Compiling module 'vision_follow(MAX_SPEED_Q16=16'b0010111011100000,ACCEL_Q16=16'b0000000000010000)'("E:\codex_fpga_pid\best-end\src\vision_follow.v":3)
+Compiling module 'ws2812_status'("E:\codex_fpga_pid\best-end\src\ws2812_status.v":5)
+Compiling module 'balance_pid_core(TARGET_ANGLE=32'sb00000000000000000100111011001111,PWM_PERIOD=12'b111000010000,KP_POS=32'sb00000000000000000000000011110000,KP_POS_NEAR=32'sb00000000000000000000000001010000,QUIET_HOLD_ENABLE=1,REFERENCE_SETTLING_ENABLE=1,BALANCE_TRIM_ADC=32'sb00000000000000000000000000000000,POS_P_OFFSET_MAX=32'sb00000000000000000000000011001000,MOVE_POS_P_OFFSET_MAX=32'sb00000000000000000000000101101000,RETURN_BRAKE_RAMP_STEP=4'b0010,MOVE_TARGET_OFFSET_MAX=32'sb00000000000000000000001010001010,MOVE_TARGET_SLEW=32'sb00000000000000000000000000110010)'("E:\codex_fpga_pid\best-end\src\balance_pid_core.v":3)
+WARN  (EX3791) : Expression size 33 truncated to fit in target size 6("E:\codex_fpga_pid\best-end\src\balance_pid_core.v":217)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("E:\codex_fpga_pid\best-end\src\balance_pid_core.v":364)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("E:\codex_fpga_pid\best-end\src\balance_pid_core.v":384)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 17("E:\codex_fpga_pid\best-end\src\balance_pid_core.v":457)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 17("E:\codex_fpga_pid\best-end\src\balance_pid_core.v":458)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 17("E:\codex_fpga_pid\best-end\src\balance_pid_core.v":459)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("E:\codex_fpga_pid\best-end\src\balance_pid_core.v":477)
+Compiling module 'windmill_control'("E:\codex_fpga_pid\best-end\src\windmill_control.v":14)
+Compiling module 'windmill_rotation_guard(ROTATION_SIGN=-1)'("E:\codex_fpga_pid\best-end\src\windmill_control.v":211)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\codex_fpga_pid\best-end\src\windmill_control.v":103)
+Compiling module 'uart_tx'("E:\codex_fpga_pid\best-end\src\uart.v":1)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\codex_fpga_pid\best-end\src\uart.v":36)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("E:\codex_fpga_pid\best-end\src\uart.v":38)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("E:\codex_fpga_pid\best-end\src\auto_pid.v":1444)
+NOTE  (EX0101) : Current top module is "pendulum_vision_top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "E:\codex_fpga_pid\best-end\impl\gwsynthesis\pendulum_vision.vg" completed
+[100%] Generate report file "E:\codex_fpga_pid\best-end\impl\gwsynthesis\pendulum_vision_syn.rpt.html" completed
+GowinSynthesis finish

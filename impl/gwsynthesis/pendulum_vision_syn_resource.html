@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Hierarchy Module Resource</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 14px; }
+div#main_wrapper{ width: 100%; }
+h1 {text-align: center; }
+h1 {margin-top: 36px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { align = "center"; padding: 5px 2px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-color: #dee8f4; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="content">
+<h1>Hierarchy Module Resource</h1>
+<table>
+<tr>
+<th class="label">MODULE NAME</th>
+<th class="label">REG NUMBER</th>
+<th class="label">ALU NUMBER</th>
+<th class="label">LUT NUMBER</th>
+<th class="label">DSP NUMBER</th>
+<th class="label">BSRAM NUMBER</th>
+<th class="label">SSRAM NUMBER</th>
+<th class="label">ROM16 NUMBER</th>
+</tr>
+<tr>
+<td class="label">pendulum_vision_top (E:/codex_fpga_pid/best-end/src/pendulum_vision_top.v)</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--camera
+ (E:/codex_fpga_pid/best-end/src/pendulum_vision_top.v)</td>
+<td align = "center">34</td>
+<td align = "center">-</td>
+<td align = "center">79</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--init
+ (E:/codex_fpga_pid/best-end/src/camera_x_frontend.v)</td>
+<td align = "center">155</td>
+<td align = "center">39</td>
+<td align = "center">495</td>
+<td align = "center">1</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--bus
+ (E:/codex_fpga_pid/best-end/src/preview_init.v)</td>
+<td align = "center">141</td>
+<td align = "center">31</td>
+<td align = "center">224</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--rom
+ (E:/codex_fpga_pid/best-end/src/preview_init.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">369</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sampler
+ (E:/codex_fpga_pid/best-end/src/camera_x_frontend.v)</td>
+<td align = "center">35</td>
+<td align = "center">-</td>
+<td align = "center">3</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--sync_detect
+ (E:/codex_fpga_pid/best-end/src/camera_x_frontend.v)</td>
+<td align = "center">125</td>
+<td align = "center">-</td>
+<td align = "center">250</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--tracker
+ (E:/codex_fpga_pid/best-end/src/camera_x_frontend.v)</td>
+<td align = "center">345</td>
+<td align = "center">251</td>
+<td align = "center">579</td>
+<td align = "center">3</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--control
+ (E:/codex_fpga_pid/best-end/src/pendulum_vision_top.v)</td>
+<td align = "center">2104</td>
+<td align = "center">1156</td>
+<td align = "center">4746</td>
+<td align = "center">9</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--my_adc
+ (E:/codex_fpga_pid/best-end/src/auto_pid.v)</td>
+<td align = "center">101</td>
+<td align = "center">15</td>
+<td align = "center">146</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--my_encoder
+ (E:/codex_fpga_pid/best-end/src/auto_pid.v)</td>
+<td align = "center">124</td>
+<td align = "center">16</td>
+<td align = "center">138</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--meteor_release
+ (E:/codex_fpga_pid/best-end/src/auto_pid.v)</td>
+<td align = "center">60</td>
+<td align = "center">32</td>
+<td align = "center">80</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--vision_enabled.follow
+ (E:/codex_fpga_pid/best-end/src/auto_pid.v)</td>
+<td align = "center">383</td>
+<td align = "center">183</td>
+<td align = "center">775</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--status_led
+ (E:/codex_fpga_pid/best-end/src/auto_pid.v)</td>
+<td align = "center">42</td>
+<td align = "center">18</td>
+<td align = "center">44</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--my_balance_pid
+ (E:/codex_fpga_pid/best-end/src/auto_pid.v)</td>
+<td align = "center">924</td>
+<td align = "center">822</td>
+<td align = "center">1472</td>
+<td align = "center">8</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--windmill
+ (E:/codex_fpga_pid/best-end/src/auto_pid.v)</td>
+<td align = "center">589</td>
+<td align = "center">301</td>
+<td align = "center">833</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--rotation_guard
+ (E:/codex_fpga_pid/best-end/src/windmill_control.v)</td>
+<td align = "center">55</td>
+<td align = "center">-</td>
+<td align = "center">288</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--my_uart
+ (E:/codex_fpga_pid/best-end/src/auto_pid.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">40</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

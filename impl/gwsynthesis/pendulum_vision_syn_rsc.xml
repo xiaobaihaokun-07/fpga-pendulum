@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="pendulum_vision_top" Register="2" Lut="1" T_Register="5243(2)" T_Alu="2864(0)" T_Lut="10562(1)" T_MULT9X9="1(0)" T_MULT18X18="7(0)" T_MULTALU36X18="5(0)" T_MULTADDALU18X18="3(0)" T_ALU54D="10(0)" T_Bsram="1(0)">
+ <SubModule name="camera" Register="34" Lut="79" T_Register="835(34)" T_Alu="321(0)" T_Lut="1999(79)" T_MULT18X18="3(0)" T_MULTADDALU18X18="1(0)" T_Bsram="1(0)">
+  <SubModule name="init" Register="155" Alu="39" Lut="495" MULT18X18="1" Bsram="1" T_Register="296(155)" T_Alu="70(39)" T_Lut="1088(495)" T_MULT18X18="1(1)" T_Bsram="1(1)">
+   <SubModule name="bus" Register="141" Alu="31" Lut="224" T_Register="141(141)" T_Alu="31(31)" T_Lut="224(224)"/>
+   <SubModule name="rom" Lut="369" T_Lut="369(369)"/>
+  </SubModule>
+  <SubModule name="sampler" Register="35" Lut="3" T_Register="35(35)" T_Lut="3(3)"/>
+  <SubModule name="sync_detect" Register="125" Lut="250" T_Register="125(125)" T_Lut="250(250)"/>
+  <SubModule name="tracker" Register="345" Alu="251" Lut="579" MULT18X18="2" MULTADDALU18X18="1" T_Register="345(345)" T_Alu="251(251)" T_Lut="579(579)" T_MULT18X18="2(2)" T_MULTADDALU18X18="1(1)"/>
+ </SubModule>
+ <SubModule name="control" Register="2104" Alu="1156" Lut="4746" MULT9X9="1" MULT18X18="1" ALU54D="7" T_Register="4406(2104)" T_Alu="2543(1156)" T_Lut="8562(4746)" T_MULT9X9="1(1)" T_MULT18X18="4(1)" T_MULTALU36X18="5(0)" T_MULTADDALU18X18="2(0)" T_ALU54D="10(7)">
+  <SubModule name="my_adc" Register="101" Alu="15" Lut="146" T_Register="101(101)" T_Alu="15(15)" T_Lut="146(146)"/>
+  <SubModule name="my_encoder" Register="124" Alu="16" Lut="138" T_Register="124(124)" T_Alu="16(16)" T_Lut="138(138)"/>
+  <SubModule name="meteor_release" Register="60" Alu="32" Lut="80" T_Register="60(60)" T_Alu="32(32)" T_Lut="80(80)"/>
+  <SubModule name="vision_enabled.follow" Register="383" Alu="183" Lut="775" MULT18X18="2" ALU54D="3" T_Register="383(383)" T_Alu="183(183)" T_Lut="775(775)" T_MULT18X18="2(2)" T_ALU54D="3(3)"/>
+  <SubModule name="status_led" Register="42" Alu="18" Lut="44" T_Register="42(42)" T_Alu="18(18)" T_Lut="44(44)"/>
+  <SubModule name="my_balance_pid" Register="924" Alu="822" Lut="1472" MULT18X18="1" MULTALU36X18="5" MULTADDALU18X18="2" T_Register="924(924)" T_Alu="822(822)" T_Lut="1472(1472)" T_MULT18X18="1(1)" T_MULTALU36X18="5(5)" T_MULTADDALU18X18="2(2)"/>
+  <SubModule name="windmill" Register="589" Alu="301" Lut="833" T_Register="644(589)" T_Alu="301(301)" T_Lut="1121(833)">
+   <SubModule name="rotation_guard" Register="55" Lut="288" T_Register="55(55)" T_Lut="288(288)"/>
+  </SubModule>
+  <SubModule name="my_uart" Register="24" Lut="40" T_Register="24(24)" T_Lut="40(40)"/>
+ </SubModule>
+</Module>
