@@ -1,0 +1,192 @@
+{
+  "package": "best-end",
+  "prepared_at": "2026-11-03T18:51:17+08:00",
+  "device": "GW2AR-LV18QN88C8/I7",
+  "top_module": "pendulum_vision_top",
+  "firmware_file": "impl/pnr/pendulum_vision.fs",
+  "firmware_sha256": "7d2ad1bab1ec13c145b2d79faa98c257c908bec4bf6fbe381e1ec3da66516dd8",
+  "control_sources_unchanged": true,
+  "firmware_rebuilt": false,
+  "files": [
+    {
+      "path": "build.tcl",
+      "bytes": 181,
+      "sha256": "22c0e60137d6d1502d5725eec3f67971b7bd55326a1623cc9f2be6df0fa43611"
+    },
+    {
+      "path": "dashboard/__init__.py",
+      "bytes": 47,
+      "sha256": "026eca0121d9cd3d24be31ec27ca679e50cc5015d57df0739712dee0fa2d9e67"
+    },
+    {
+      "path": "dashboard/app.js",
+      "bytes": 17887,
+      "sha256": "f5a04f37b6d3caa8e12502a3602eac30c99a67a2f0d89f7bd52b0b3c4c78b6cc"
+    },
+    {
+      "path": "dashboard/app.py",
+      "bytes": 10160,
+      "sha256": "d911d1e1e55fbf4bb982da567ea0c41a4cedf893d677ca42708bc3069e122cb8"
+    },
+    {
+      "path": "dashboard/index.html",
+      "bytes": 9041,
+      "sha256": "de0fdb20f6080d384509e66ca51ba76991b1c7496be1641e51d0a830a95e511b"
+    },
+    {
+      "path": "dashboard/store.py",
+      "bytes": 20521,
+      "sha256": "8a6402064d38be1c82e52aca62e2e40bd350613831512de80a904860926123af"
+    },
+    {
+      "path": "dashboard/style.css",
+      "bytes": 14565,
+      "sha256": "18ece5b598774afd4c0494c20b21785336a9d93cde6ff73cd6ce4ae6e3f2b83e"
+    },
+    {
+      "path": "generate_reference_init.py",
+      "bytes": 6440,
+      "sha256": "f824c2b7de81c6e1f6401a85c62f14e350c9981694e7e73138388d7846cd6e3e"
+    },
+    {
+      "path": "impl/pendulum_vision_process_config.json",
+      "bytes": 2679,
+      "sha256": "2091a710bf48505bd6f8d414cccee479f4c8ca9a220761737476446d9445aeff"
+    },
+    {
+      "path": "impl/pnr/pendulum_vision.fs",
+      "bytes": 7264150,
+      "sha256": "7d2ad1bab1ec13c145b2d79faa98c257c908bec4bf6fbe381e1ec3da66516dd8"
+    },
+    {
+      "path": "monitor.py",
+      "bytes": 12807,
+      "sha256": "df4d367f11402685680f59245c7c5a1f75f1823935a94a4af7c221064c0f67e8"
+    },
+    {
+      "path": "pendulum_vision.gprj",
+      "bytes": 1656,
+      "sha256": "666466ec398c17db37a55a3d44bbd73c289407cb15ba40839d94ed28c72d3d68"
+    },
+    {
+      "path": "protocol.py",
+      "bytes": 7468,
+      "sha256": "e387eec01f96a328897565fcc3513445c9b45c99d34807aff7c4c0d8b5ebe30a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3798,
+      "sha256": "cc76bf3d07deffbdb5355230567dd1a5bff588841ba076bb38bec24d8fe1f8de"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 15,
+      "sha256": "7c3a7b075c67c54222834f80a92ff4a7651995b7e21c4e37370a7d90018c16de"
+    },
+    {
+      "path": "src/ads1115.v",
+      "bytes": 5492,
+      "sha256": "72459118cd6c7de56b58454326dd4c988cea80c029e8c463d97d017a4f7538e0"
+    },
+    {
+      "path": "src/auto_pid.v",
+      "bytes": 88865,
+      "sha256": "267c9c8133b93afc2296a24e499623fea1d17e7804fdbc3ff4daa2aaece79cb0"
+    },
+    {
+      "path": "src/balance_pid_core.v",
+      "bytes": 28035,
+      "sha256": "ba5252687b6d5e0cf4c4206351b89a0f4647158def84d98db258fc5e8b766c71"
+    },
+    {
+      "path": "src/camera_dvp_sampler.v",
+      "bytes": 1630,
+      "sha256": "f275a2c385f9421277f4d3117f04619e5c18cc21c54fa56b11c88fd6a6f58ff6"
+    },
+    {
+      "path": "src/camera_sccb.v",
+      "bytes": 7744,
+      "sha256": "e46797915cefee60057c77f46a8309420253b4d9818071ac68a27f379190adc9"
+    },
+    {
+      "path": "src/camera_sync_detect.v",
+      "bytes": 6788,
+      "sha256": "3e607b721966e0020fee1725f2e1499a5d0e3ecabe7c2ba4f104a2dab97ae6d4"
+    },
+    {
+      "path": "src/camera_uart.v",
+      "bytes": 820,
+      "sha256": "4f30ba0332411f0e3d4ad2a4474d5f141a57139ccd8fc569cb1059bfac32e968"
+    },
+    {
+      "path": "src/camera_x_frontend.v",
+      "bytes": 3907,
+      "sha256": "451b34c229674021b1a01ef5c0d5e939399a2317d0b2f41cad7463dcbfa8098f"
+    },
+    {
+      "path": "src/encoder.v",
+      "bytes": 3066,
+      "sha256": "b3c6f59288bee95998fdf30d70f6bab199daac3ee4fdd880c5afce08834724c1"
+    },
+    {
+      "path": "src/ov5640_reference_rom.v",
+      "bytes": 12638,
+      "sha256": "cb33425a1914475bd5b5c48637b007e83a54b2c3f74e8ee030fc182dec213f2a"
+    },
+    {
+      "path": "src/pendulum_vision.cst",
+      "bytes": 3041,
+      "sha256": "a688cbdff555a6424a80d8a9db6992264499946c410a74204fddc64120df3d65"
+    },
+    {
+      "path": "src/pendulum_vision.sdc",
+      "bytes": 462,
+      "sha256": "d10c69970ab22c228c0fb0e101a7e2f734a031693128890c4a5957fc13f0f34c"
+    },
+    {
+      "path": "src/pendulum_vision_top.v",
+      "bytes": 2650,
+      "sha256": "dab8daef33f2e33bf945ca0488d5ce351c23835f62d3555a4307859275573834"
+    },
+    {
+      "path": "src/preview_init.v",
+      "bytes": 8610,
+      "sha256": "afdb3222a61dae1818ea34a6639f7ccfa576111ed773ea08f0c0a604828d421c"
+    },
+    {
+      "path": "src/red_tracker.v",
+      "bytes": 9465,
+      "sha256": "007dd83ca5ccad8e3d48d4bd14838cf1e7381ee46e15504f13a3397e8aeea6b8"
+    },
+    {
+      "path": "src/uart.v",
+      "bytes": 1687,
+      "sha256": "65623633d64631f359b64c41a7f9acbda6c6b1fd15508ac30044976c2d65b01b"
+    },
+    {
+      "path": "src/vision_follow.v",
+      "bytes": 11425,
+      "sha256": "0bdcd999a2388a0b3a63b77bde31043d2f3f0ba546e756ee9f9294684b0362c3"
+    },
+    {
+      "path": "src/windmill_control.v",
+      "bytes": 13722,
+      "sha256": "3f550ac5ceb76a362132617878a721c716e8f6c2ffa9a480853ee408df60d568"
+    },
+    {
+      "path": "src/ws2812_status.v",
+      "bytes": 1513,
+      "sha256": "5b19ae3517edc2edfb5941309c75303719da8efe09792d126f2295c72d0c7aba"
+    },
+    {
+      "path": "third_party/appnote_reference_regs.json",
+      "bytes": 13292,
+      "sha256": "0547211980c01d62bfd0dfa80c87b53bd5fb27675929e93a8bb93c06f6babb52"
+    },
+    {
+      "path": "third_party/LICENSE-OV5640.txt",
+      "bytes": 1519,
+      "sha256": "2c0695d5af50bc20ebf4c7fa365c450d6a105ad512193618510798d42a87d93e"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2AR-18C" pn="GW2AR-LV18QN88C8/I7">gw2ar18c-000</Device>
+    <FileList>
+        <File path="src/ads1115.v" type="file.verilog" enable="1"/>
+        <File path="src/auto_pid.v" type="file.verilog" enable="1"/>
+        <File path="src/balance_pid_core.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_dvp_sampler.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_sccb.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_sync_detect.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_uart.v" type="file.verilog" enable="1"/>
+        <File path="src/camera_x_frontend.v" type="file.verilog" enable="1"/>
+        <File path="src/encoder.v" type="file.verilog" enable="1"/>
+        <File path="src/ov5640_reference_rom.v" type="file.verilog" enable="1"/>
+        <File path="src/pendulum_vision_top.v" type="file.verilog" enable="1"/>
+        <File path="src/preview_init.v" type="file.verilog" enable="1"/>
+        <File path="src/red_tracker.v" type="file.verilog" enable="1"/>
+        <File path="src/uart.v" type="file.verilog" enable="1"/>
+        <File path="src/vision_follow.v" type="file.verilog" enable="1"/>
+        <File path="src/windmill_control.v" type="file.verilog" enable="1"/>
+        <File path="src/ws2812_status.v" type="file.verilog" enable="1"/>
+        <File path="src/pendulum_vision.cst" type="file.cst" enable="1"/>
+        <File path="src/pendulum_vision.sdc" type="file.sdc" enable="1"/>
+    </FileList>
+</Project>
